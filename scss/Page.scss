@@ -9,7 +9,7 @@
 
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     padding: 15px;
     box-sizing: border-box;
@@ -72,6 +72,10 @@
 @media only screen and (max-width: 1200px) {
     .page__title {
         font-size: $heading-font-size * 0.75;
+    }
+
+    .page {
+        padding: 40px 15px;
     }
 }
 
