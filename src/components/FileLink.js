@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import '../../scss/FileLink.scss';
@@ -6,14 +7,21 @@ import '../../scss/FileLink.scss';
 const FileLink = ({
     text,
     depth,
-    selected
+    url,
+    handleClick
 }) => (
-    <div className={`file-link ${selected ? ' selected' : null}`}>
+    <NavLink
+        to={url}
+        onClick={handleClick}
+        exact
+        className="file-link"
+        activeClassName="selected"
+    >
         <span className="file-link__content" style={{paddingLeft: `${depth * 36}px`}}>
             <FontAwesomeIcon icon={faFile} />
             <span className="file-link__content__text">{text}.tjd</span>
         </span>
-    </div>
+    </NavLink>
 );
 
 export default FileLink;

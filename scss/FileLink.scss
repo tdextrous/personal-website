@@ -1,9 +1,15 @@
 @import '_variables';
+@import 'reset';
 
-.file-link {
+.file-link,
+a,
+a:visited {
+    display: block;
     width: 100%;
+    margin: 0;
     box-sizing: border-box;
     padding: 8px 10px;
+    color: $light-1;
 }
 
 .file-link.selected {
