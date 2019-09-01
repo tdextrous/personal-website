@@ -12,6 +12,16 @@ const Home = () => (
                 <li className="page__list-item">amateur web developer</li>
                 <li className="page__list-item">currently seeking internship for summer 2020</li>
             </ul>
+            <p className="page__text">
+                <a href="#" className="link">github</a>&nbsp;
+                //
+                &nbsp;<a href="#" className="link">codepen</a>&nbsp;
+                //
+                &nbsp;<a href="#" className="link">linkedin</a>
+            </p>
+            <p className="page__text">
+                contact: t (dot) dextrous (at) gmail
+            </p>
         </div>
     </section>
 );
