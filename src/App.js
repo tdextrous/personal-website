@@ -1,12 +1,16 @@
 import React from "react";
 import { hot } from 'react-hot-loader';
-
+import Home from './components/Home';
+import FileNav from './components/FileNav';
 import '../scss/styles.scss';
 
 const App = () => {
     return (
-        <div className="heading">
-            Hello React!
+        <div className="site-wrapper">
+            <FileNav />
+            <div className="content-wrapper">
+                <Home />
+            </div>
         </div>
     );
 };
