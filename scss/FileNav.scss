@@ -1,0 +1,30 @@
+@import '_variables';
+@import '_mixins';
+@import 'reset';
+
+
+.file-nav {
+    width: 25%;
+    max-width: 275px;
+    background-color: $black-2;
+    height: 100vh;
+    padding: 0;
+    position: fixed;
+    border-right: 1px solid $black-3;
+    color: $light-1;
+}
+
+.file-nav__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+
+.file-nav__title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}

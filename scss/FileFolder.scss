@@ -1,0 +1,41 @@
+@import '_variables';
+
+.file-folder {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 12px;
+}
+
+.file-folder.selected {
+    background-color: $light-3;
+}
+
+.file-folder__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.file-folder__content__text {
+    padding: 0 5px;
+}
+
+
+.icon-container--chevron {
+    padding-bottom: 4px;
+    padding-right: 10px;
+}
+
+.file-folder__chevron {
+    text-align: center;
+}
+
+.rotated {
+    transform: rotate(90deg);
+}
+
+.file-folder__children {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+}

@@ -1,0 +1,19 @@
+@import '_variables';
+
+.file-link {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+}
+
+.file-link.selected {
+    background-color: $light-3;
+}
+
+.file-link__content {
+
+}
+
+.file-link__content__text {
+    padding: 0px 5px;
+}
