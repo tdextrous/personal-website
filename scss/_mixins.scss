@@ -24,6 +24,7 @@
     &::after {
         content: "";
         position: absolute;
+        margin-left: 3px;
         bottom: 0;
         border-top: $width solid $color;
         border-left: $length solid $color;
