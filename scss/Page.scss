@@ -50,14 +50,38 @@
     margin-top: 1.5rem;
     line-height: 2.25rem;
     position :relative;
+    padding: 5px;
 }
 
 .page__list {
-    padding: 10px;
+    padding: 5px;
 }
 
 .page__list-item {
     margin: $box-margin 0;
+}
+.web-cap--msec {
+    background-image: url('../src/img/screencap-msec.jpg');
+}
+
+.web-cap--veazee {
+    background-image: url('../src/img/screencap-veazee.jpg');
+}
+
+.page__web-cap {
+    height: 75vh;
+    width: 95%;
+    max-width: 800px;
+
+    margin: $box-margin auto;
+
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page__web-cap__container {
+    max-width: 1000px;
 }
 
 .link,
