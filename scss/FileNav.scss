@@ -1,0 +1,54 @@
+@import '_variables';
+@import '_mixins';
+@import 'reset';
+
+
+.file-nav {
+    width: 100%;
+    max-width: 275px;
+    background-color: $black-2;
+    height: 100vh;
+    padding: 0;
+    position: fixed;
+    border-right: 1px solid $black-3;
+    color: $light-1;
+    box-sizing: border-box;
+}
+
+.file-nav__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+
+.file-nav__title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    .file-nav {
+        width: 100%;
+        max-width: 100%;
+        transform: translate(-100%, 0%);
+        transition: transform linear 0.5s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: scroll;
+        z-index: 2;
+    }
+
+    .file-nav.active {
+        transform: none;
+        transition: transform ease-in-out 0.5s;
+    }
+
+    .file-nav__title-container {
+        height: 65px;
+    }
+}

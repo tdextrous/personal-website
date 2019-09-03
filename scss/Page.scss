@@ -1,0 +1,111 @@
+@import '_variables';
+@import '_mixins';
+@import 'reset';
+
+
+.page {
+    font-family: $body-font;
+    font-size: $body-font-size;
+
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.page__text-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.page__text-wrapper--center {
+    position: absolute;
+    max-width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.page__title {
+    font-family: $heading-font;
+    font-size: $heading-font-size;
+    text-transform: lowercase;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    @include flashing-cursor(white, 5px, 12px);
+}
+
+.page__subtitle {
+    font-family: $heading-font;
+    font-size: $heading-font-size * 0.5;
+    margin-top: 1.5rem;
+    text-transform: lowercase;
+    font-weight: 700;
+}
+
+.page__text {
+    max-width: 1000px;
+    margin-top: 1.5rem;
+    line-height: 2.25rem;
+    position :relative;
+    padding: 5px;
+}
+
+.page__list {
+    padding: 5px;
+}
+
+.page__list-item {
+    margin: $box-margin 0;
+}
+.web-cap--msec {
+    background-image: url('../src/img/screencap-msec.jpg');
+}
+
+.web-cap--veazee {
+    background-image: url('../src/img/screencap-veazee.jpg');
+}
+
+.page__web-cap {
+    height: 75vh;
+    width: 95%;
+    max-width: 800px;
+
+    margin: $box-margin auto;
+
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page__web-cap__container {
+    max-width: 1000px;
+}
+
+.link,
+.link:visited {
+    width: auto;
+    display: inline;
+    color: white;
+    padding: 0;
+    @include text-underline($green-2);
+}
+
+@media only screen and (max-width: 1200px) {
+    .page__title {
+        font-size: $heading-font-size * 0.75;
+    }
+
+    .page {
+        padding: 40px 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .page__title {
+        font-size: $heading-font-size * 0.55;
+        @include flashing-cursor(white, 3px, 8px);
+    }
+}

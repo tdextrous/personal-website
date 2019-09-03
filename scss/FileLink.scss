@@ -1,0 +1,25 @@
+@import '_variables';
+@import 'reset';
+
+.file-link,
+a,
+a:visited {
+    display: block;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    color: $light-1;
+}
+
+.file-link.selected {
+    background-color: $light-3;
+}
+
+.file-link__content {
+
+}
+
+.file-link__content__text {
+    padding: 0px 5px;
+}
