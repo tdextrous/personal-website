@@ -13,11 +13,11 @@ const Home = () => (
                 <li className="page__list-item">currently seeking internship for summer 2020</li>
             </ul>
             <p className="page__text">
-                <a href="#" className="link">github</a>&nbsp;
+                <a href="https://github.com/tdextrous" target="_blank" rel="noopener noreferrer" className="link">github</a>&nbsp;
                 //
-                &nbsp;<a href="#" className="link">codepen</a>&nbsp;
+                &nbsp;<a href="https://codepen.io/tdextrous" target="_blank" rel="noopener noreferrer" className="link">codepen</a>&nbsp;
                 //
-                &nbsp;<a href="#" className="link">linkedin</a>
+                &nbsp;<a href="https://www.linkedin.com/in/thomas-dexter-7b1a8a18a" target="_blank" rel="noopener noreferrer" className="link">linkedin</a>
             </p>
             <p className="page__text">
                 contact: t (dot) dextrous (at) gmail
