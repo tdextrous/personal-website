@@ -8,7 +8,7 @@ const Home = () => (
                 Thomas Dexter
             </h1>
             <ul className="page__list">
-                <li className="page__list-item">freshman electrical engineering student @ texas a&amp;m university</li>
+                <li className="page__list-item">freshman engineering student @ texas a&amp;m university</li>
                 <li className="page__list-item">amateur web developer</li>
                 <li className="page__list-item">currently seeking internship for summer 2020</li>
             </ul>
