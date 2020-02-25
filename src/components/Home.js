@@ -9,7 +9,7 @@ const Home = () => (
             </h1>
             <ul className="page__list">
                 <li className="page__list-item">freshman engineering student @ texas a&amp;m university</li>
-                <li className="page__list-item">amateur web developer</li>
+                <li className="page__list-item">web developer</li>
             </ul>
             <p className="page__text">
                 <a href="https://github.com/tdextrous" target="_blank" rel="noopener noreferrer" className="link">github</a>&nbsp;
