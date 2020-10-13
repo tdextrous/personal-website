@@ -11,6 +11,7 @@ const FileNav = ({ active, handleClick }) => {
             </div>
             <div className="file-nav__link-container">
                 <FileFolder text="projects">
+                    <FileLink text="jpl" url="/projects/jpl" depth={1} handleClick={handleClick} />
                     <FileLink text="mountainStatesElectrical" url="/projects/msec" depth={1} handleClick={handleClick} />
                     <FileLink text="veazee" url="/projects/veazee" depth={1} handleClick={handleClick} />
                 </FileFolder>
