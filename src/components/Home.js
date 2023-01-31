@@ -9,7 +9,7 @@ const Home = () => (
             </h1>
             <ul className="page__list">
                 <li className="page__list-item">
-                  junior electrical engineering &amp; math student @ texas a&amp;m university
+                  senior electrical engineering &amp; math student @ texas a&amp;m university
                 </li>
 
                 <li className="page__list-item">web developer</li>
